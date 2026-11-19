@@ -11,7 +11,7 @@ export default (Tippy, defaultProps) =>
           ? cloneElement(children, {
               ref(node) {
                 preserveRef(ref, node);
-                preserveRef(children.ref, node);
+                preserveRef(children.props.ref, node);
               },
             })
           : null}

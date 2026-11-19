@@ -226,7 +226,7 @@ export default function TippyGenerator(tippy) {
           ? cloneElement(children, {
               ref(node) {
                 mutableBox.ref = node;
-                preserveRef(children.ref, node);
+                preserveRef(children.props.ref, node);
               },
             })
           : null}

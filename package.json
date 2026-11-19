@@ -12,7 +12,8 @@
     "build": "rollup --config",
     "test": "jest --coverage",
     "lint": "eslint \"{src,test}/**/*.js\"",
-    "format": "prettier --write \"{src,test,demo}/**/*.{js,ts,json,css,md}\""
+    "format": "prettier --write \"{src,test,demo}/**/*.{js,ts,json,css,md}\"",
+    "prepare": "npm run build"
   },
   "author": "atomiks",
   "license": "MIT",

@@ -10,7 +10,7 @@ export interface TippyProps extends Partial<Omit<Props, 'content' | 'render'>> {
   disabled?: boolean;
   className?: string;
   singleton?: SingletonObject;
-  reference?: React.RefObject<Element> | Element | null;
+  reference?: React.RefObject<Element | null> | Element | null;
   ref?: React.Ref<Element>;
   render?: (
     attrs: {
